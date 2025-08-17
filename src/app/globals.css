@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-custom-straw-yellow: #d4a017; /* Kuning agak gelap */
+  --color-custom-warm-dark-brown: #5c4033; /* Coklat gelap */
+  --color-custom-pirate-red: #b22222; /* Merah pekat */
+  --color-custom-deep-black: #1a1a1a; /* Hitam pekat */
+  --color-custom-white-sail: #f5f5f5; /* Putih bersih */
+
+  --font-one-piece: "one-piece", sans-serif;
+  --font-body: "body", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* @layer base {
+  html,
+  body {
+    @apply dark:bg-trueGray-900;
+  }
+} */
+
+.dot-animation {
+  opacity: 0;
+  animation: dotFade 1.5s infinite ease-in-out;
+}
+
+.dot-animation.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.dot-animation.delay-600 {
+  animation-delay: 0.6s;
+}
+
+@keyframes dotFade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
