@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4 text-center space-y-6">
         {/* Kutipan Epik */}
         <p className="text-2xl md:text-3xl font-extrabold tracking-wide">
-          "Di lautan luas, mimpi tidak akan pernah tenggelam."
+          {`"Di lautan luas, mimpi tidak akan pernah tenggelam."`}
         </p>
 
         {/* Deskripsi Tribute */}
