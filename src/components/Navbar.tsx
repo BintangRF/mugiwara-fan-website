@@ -104,7 +104,10 @@ export const Navbar = () => {
 
             {/* Mobile menu button */}
             <div className="lg:hidden">
-              <Disclosure.Button className="p-2 text-custom-white-sail hover:text-custom-pirate-red transition-colors">
+              <Disclosure.Button
+                className="p-2 text-custom-white-sail hover:text-custom-pirate-red transition-colors"
+                aria-label={open ? "Close menu" : "Open menu"}
+              >
                 {open ? <X size={28} /> : <Menu size={28} />}
               </Disclosure.Button>
             </div>

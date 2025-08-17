@@ -19,7 +19,7 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
       {props.preTitle && (
         <div className="flex items-center gap-3 mb-2">
           <span className="h-[2px] w-8 bg-custom-straw-yellow rounded-full"></span>
-          <span className="text-sm font-semibold tracking-widest text-custom-straw-yellow">
+          <span className="text-lg font-semibold tracking-widest text-custom-straw-yellow">
             {props.preTitle}
           </span>
           <span className="h-[2px] w-8 bg-custom-straw-yellow rounded-full"></span>
